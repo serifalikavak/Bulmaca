@@ -67,7 +67,7 @@ public class KutuTuretici {
 
         Listener lr = new Listener(this.btnKutu, this.sayilar, this.jLabel6);
         for (int i = 0; i < adet; i++) {
-            btnKutu[i] = new JToggleButton("      ");
+            btnKutu[i] = new JToggleButton(""+ sayilar.get(i));
             btnKutu[i].setFont(new Font("Serif", Font.BOLD, 28));
             btnKutu[i].addActionListener(lr);
 
