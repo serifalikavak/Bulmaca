@@ -22,6 +22,7 @@ public class Zamanlayici {
     private JToggleButton[] btnKutu;
     private JButton btnBaslat;
     private Timer timer = null;
+    OyunKontrol oyun;
             private int saniye = 0;
             private int dakika = 0;
             private int saat = 0;
@@ -76,6 +77,11 @@ public class Zamanlayici {
             }
         });
         timer.start();
+    }
+    public void durAnam(){
+        if(oyun.x == 1){
+            timer.stop();
+        }
     }
 
 }

@@ -16,7 +16,7 @@ public class OyunKontrol {
     private int sayac3;
     private int sayac2;
     private int btnLength;
-    private static int x;
+    static int x;
     public static int skorArtis = 50;
     public static int skorAzalis = 0;
     private JLabel jLabel6;
