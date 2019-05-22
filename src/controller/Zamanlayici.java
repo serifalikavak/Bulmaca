@@ -74,12 +74,19 @@ public class Zamanlayici {
                         jLabel3.setText(str4);
                     }
                 }
+                 if (oyun.x == 1) {
+                    saniye--;
+                    if (saniye >= 10) {
+                        jLabel3.setText("0" + saat + ":0" + dakika + ":" + saniye);
+                    } else {
+                        jLabel3.setText("0" + saat + ":0" + dakika + ":0" + saniye);
+                    }
+                    timer.stop();
+                }
             }
         });
         timer.start();
-        
-        if(oyun.x == 1)
-            timer.stop();
+       
     }
 
 }
