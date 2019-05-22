@@ -77,11 +77,9 @@ public class Zamanlayici {
             }
         });
         timer.start();
-    }
-    public void durAnam(){
-        if(oyun.x == 1){
+        
+        if(oyun.x == 1)
             timer.stop();
-        }
     }
 
 }
